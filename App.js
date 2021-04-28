@@ -22,7 +22,7 @@ const defaultNavigatorStyles = () => ({
     borderBottomColor: colors.transparent,
     elevation: 0,
     shadowOpacity: 0,
-    height: 120,
+    height: 55,
   },
   cardStyle: {
     backgroundColor: colors.white,
@@ -38,7 +38,9 @@ const App = () => {
         <Stack.Screen
           name={PAGES.PreloadPage}
           component={ PreloadPage }
-          options={ () => ({ header: () => null }) }
+          options={ () => ({
+            header: () => null,
+          }) }
         />
         <Stack.Screen
           name={PAGES.SignUpPage}
@@ -65,6 +67,9 @@ const App = () => {
               onPress={() => navigation.navigate(PAGES.AccountSettingsPage)}
             />,
             title: null,
+            headerStyle: {
+              height: 120,
+            },
           }) } />
         <Stack.Screen
           name={PAGES.AccountSettingsPage}

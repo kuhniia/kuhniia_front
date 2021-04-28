@@ -24,8 +24,21 @@ export default StyleSheet.create({
     marginHorizontal: 5,
   },
   input: {
-    height: INPUT_HEIGHT / 2,
-    width: INPUT_WIDTH,
+    width: INPUT_WIDTH - 50,
     paddingLeft: 5,
+  },
+  inputBody: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  eye: {
+    width: 50,
+    height: INPUT_HEIGHT -20,
+    bottom: 10,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  eyeIcon: {
+    width: 22,
   }
 });
