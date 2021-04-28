@@ -9,6 +9,7 @@ const ua = {
   signUp: 'Зареєструватись',
   logIn: 'Ввійти',
   welcome: 'Вітаємо',
+  yourCookingSpaces: 'Кухні',
 };
 
 export default ua;

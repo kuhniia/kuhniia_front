@@ -4,8 +4,9 @@ import styles from './styles';
 import { ButtonFilled, InputField, Spacer } from 'src/components/_shared';
 import { texts } from 'src/translations';
 import assets from 'src/assets';
+import PAGES from 'src/navigation/constants';
 
-const LogInPage = () => {
+const LogInPage = ({ navigation }) => {
   return (
     <>
       <ScrollView style={ styles.root }>
@@ -15,7 +16,12 @@ const LogInPage = () => {
           <InputField iconSrc={ assets.lockIcon } label={ texts.password } />
         </View>
       </ScrollView>
-      <ButtonFilled filled label={texts.logIn} style={styles.button} />
+      <ButtonFilled
+        filled
+        label={texts.logIn}
+        style={styles.button}
+        onPress={() => navigation.navigate(PAGES.MainPage)}
+      />
     </>
   );
 };

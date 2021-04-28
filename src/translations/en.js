@@ -9,6 +9,7 @@ const en = {
   signUp: 'Sign Up',
   logIn: 'Log In',
   welcome: 'Welcome',
+  yourCookingSpaces: 'Your cooking spaces',
 };
 
 export default en;

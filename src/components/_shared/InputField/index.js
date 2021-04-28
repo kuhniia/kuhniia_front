@@ -5,7 +5,7 @@ import { Typography, Spacer } from 'src/components/_shared';
 import { fonts, fontsSizes } from 'src/constants/fonts';
 import colors from 'src/constants/colors';
 
-const InputField = ({ iconSrc, label = '' }) => (
+const InputField = ({ iconSrc, label = '', value = '', readOnly = false }) => (
   <View style={ styles.root }>
     <View style={ styles.inputHeader }>
       <Image source={ iconSrc } style={ styles.inputHeaderIcon } />
@@ -14,7 +14,7 @@ const InputField = ({ iconSrc, label = '' }) => (
       </Typography>
     </View>
     <Spacer size={10}/>
-    <TextInput style={ styles.input } />
+    <TextInput style={ styles.input } value={value} editable={!readOnly}/>
   </View>);
 
 export default InputField;

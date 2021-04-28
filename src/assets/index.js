@@ -4,6 +4,7 @@ const assets = {
   defaultAvatar: require('src/assets/defaultAvatar/defaultAvatar.png'),
   lockIcon: require('src/assets/lock/lock.png'),
   logo: require('src/assets/logo/logo.png'),
+  cancelIcon: require('src/assets/cancel/cancel.png'),
 };
 
 export default assets;

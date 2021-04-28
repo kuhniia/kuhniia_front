@@ -4,8 +4,9 @@ import styles from './styles';
 import { InputField, Spacer, ButtonFilled } from 'src/components/_shared';
 import { texts } from 'src/translations';
 import assets from 'src/assets';
+import PAGES from 'src/navigation/constants';
 
-const SignUpPage = () => {
+const SignUpPage = ({ navigation }) => {
   return (
     <>
       <ScrollView style={ styles.root }>
@@ -21,7 +22,12 @@ const SignUpPage = () => {
           <InputField iconSrc={ assets.lockIcon } label={ texts.confirmPassword } />
         </View>
       </ScrollView>
-      <ButtonFilled filled label={texts.signUp} style={styles.button} />
+      <ButtonFilled
+        filled
+        label={texts.signUp}
+        style={styles.button}
+        onPress={() => navigation.navigate(PAGES.MainPage)}
+      />
     </>
   );
 };
