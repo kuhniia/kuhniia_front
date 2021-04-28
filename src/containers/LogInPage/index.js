@@ -7,14 +7,16 @@ import assets from 'src/assets';
 
 const LogInPage = () => {
   return (
-    <ScrollView style={ styles.root }>
-      <View style={ styles.form }>
-        <Spacer size={ 25 } />
-        <InputField iconSrc={ assets.userIcon } label={ texts.username } />
-        <InputField iconSrc={ assets.lockIcon } label={ texts.password } />
-        <ButtonFilled filled label={texts.logIn} />
-      </View>
-    </ScrollView>
+    <>
+      <ScrollView style={ styles.root }>
+        <View style={ styles.form }>
+          <Spacer size={ 25 } />
+          <InputField iconSrc={ assets.userIcon } label={ texts.username } />
+          <InputField iconSrc={ assets.lockIcon } label={ texts.password } />
+        </View>
+      </ScrollView>
+      <ButtonFilled filled label={texts.logIn} style={styles.button} />
+    </>
   );
 };
 

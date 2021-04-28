@@ -8,5 +8,10 @@ export default StyleSheet.create({
   },
   form: {
     alignItems: 'center',
-  }
+  },
+  button: {
+    position: 'absolute',
+    alignSelf: 'center',
+    bottom: 40,
+  },
 });

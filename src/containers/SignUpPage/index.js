@@ -7,20 +7,22 @@ import assets from 'src/assets';
 
 const SignUpPage = () => {
   return (
-    <ScrollView style={ styles.root }>
-      <View style={ styles.form }>
-        <Spacer size={ 25 } />
-        <Image source={ assets.defaultAvatar } />
-        <Spacer size={ 25 } />
-        <InputField iconSrc={ assets.userIcon } label={ texts.firstname } />
-        <InputField iconSrc={ assets.userIcon } label={ texts.lastname } />
-        <InputField iconSrc={ assets.messageIcon } label={ texts.email } />
-        <InputField iconSrc={ assets.userIcon } label={ texts.username } />
-        <InputField iconSrc={ assets.lockIcon } label={ texts.password } />
-        <InputField iconSrc={ assets.lockIcon } label={ texts.confirmPassword } />
-        <ButtonFilled filled label={texts.signUp} />
-      </View>
-    </ScrollView>
+    <>
+      <ScrollView style={ styles.root }>
+        <View style={ styles.form }>
+          <Spacer size={ 25 } />
+          <Image source={ assets.defaultAvatar } />
+          <Spacer size={ 25 } />
+          <InputField iconSrc={ assets.userIcon } label={ texts.firstname } />
+          <InputField iconSrc={ assets.userIcon } label={ texts.lastname } />
+          <InputField iconSrc={ assets.messageIcon } label={ texts.email } />
+          <InputField iconSrc={ assets.userIcon } label={ texts.username } />
+          <InputField iconSrc={ assets.lockIcon } label={ texts.password } />
+          <InputField iconSrc={ assets.lockIcon } label={ texts.confirmPassword } />
+        </View>
+      </ScrollView>
+      <ButtonFilled filled label={texts.signUp} style={styles.button} />
+    </>
   );
 };
 
