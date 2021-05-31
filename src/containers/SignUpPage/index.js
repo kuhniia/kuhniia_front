@@ -1,24 +1,12 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
 import UI from 'src/components/SignUpPage';
+import { signUpInit } from 'src/redux/user/actions';
 
 const SignUpPage = () => {
-  const onSignUpPress = async (userInputData) => {
-    try {
-      const response = await fetch('http://localhost:8080/auth/register', {
-        method: 'POST',
-        headers: {
-          Accept: 'application/json',
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(userInputData),
-      });
+  const dispatch = useDispatch();
 
-      const json = await response.json();
-      __DEV__ && console.log('Response', json);
-    } catch (e) {
-      __DEV__ && console.error('Error', e);
-    }
-  };
+  const onSignUpPress = (userInputData) => dispatch(signUpInit(userInputData));
 
   return <UI onSignUpPress={onSignUpPress} />;
 };
