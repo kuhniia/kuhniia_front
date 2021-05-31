@@ -15,7 +15,7 @@ const mock = {
   nickName: 'nadiya_fmnk',
 };
 
-const AccountSettingsPage = ({ selectPreloadPage = () => {} }) => {
+const UI = ({ selectPreloadPage = () => {} }) => {
   return (
     <ScrollView style={styles.root}>
       <View style={styles.header}>
@@ -49,8 +49,8 @@ const AccountSettingsPage = ({ selectPreloadPage = () => {} }) => {
   );
 };
 
-AccountSettingsPage.propTypes = {
+UI.propTypes = {
   selectPreloadPage: PropTypes.func,
 };
 
-export default AccountSettingsPage;
+export default UI;
