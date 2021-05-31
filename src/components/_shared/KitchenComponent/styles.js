@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import colors from 'src/constants/colors';
 
 export default StyleSheet.create({
   root: {
@@ -7,7 +8,7 @@ export default StyleSheet.create({
     height: 215,
     borderBottomLeftRadius: 80,
     borderTopLeftRadius: 10,
-    backgroundColor: '#756A6C'
+    backgroundColor: colors.doveGray,
   },
   avatar: {
     height: 55,

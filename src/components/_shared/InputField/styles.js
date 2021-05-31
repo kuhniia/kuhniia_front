@@ -1,7 +1,7 @@
 import { StyleSheet, Dimensions } from 'react-native';
 import colors from 'src/constants/colors';
 
-const INPUT_WIDTH = Dimensions.get("screen").width * 0.85;
+const INPUT_WIDTH = Dimensions.get('screen').width * 0.85;
 const INPUT_HEIGHT = 50;
 const BOTTOM_WEIGHT = 1.5;
 
@@ -33,12 +33,12 @@ export default StyleSheet.create({
   },
   eye: {
     width: 50,
-    height: INPUT_HEIGHT -20,
+    height: INPUT_HEIGHT - 20,
     bottom: 10,
     alignItems: 'center',
     justifyContent: 'center',
   },
   eyeIcon: {
     width: 22,
-  }
+  },
 });

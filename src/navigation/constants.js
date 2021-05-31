@@ -3,7 +3,7 @@ const PAGES = {
   SignUpPage: 'SignUpPage',
   LogInPage: 'LogInPage',
   MainPage: 'MainPage',
-  AccountSettingsPage: 'AccountSettingsPage'
+  AccountSettingsPage: 'AccountSettingsPage',
 };
 
 export default PAGES;

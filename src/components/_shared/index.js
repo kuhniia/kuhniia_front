@@ -7,13 +7,4 @@ import ScreenTitle from './ScreenTitle';
 import AvatarWithSignature from './AvatarWithSignature';
 import KitchenComponent from './KitchenComponent';
 
-export {
-  ButtonFilled,
-  Spacer,
-  InputField,
-  Typography,
-  ButtonBack,
-  ScreenTitle,
-  AvatarWithSignature,
-  KitchenComponent,
-};
+export { ButtonFilled, Spacer, InputField, Typography, ButtonBack, ScreenTitle, AvatarWithSignature, KitchenComponent };

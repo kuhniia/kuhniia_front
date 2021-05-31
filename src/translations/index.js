@@ -5,11 +5,11 @@ const defaultLanguage = 'en';
 let exported = defaultLanguage;
 
 if (defaultLanguage === 'ua') {
-  exported = ua
+  exported = ua;
 }
 
 if (defaultLanguage === 'en') {
-  exported = en
+  exported = en;
 }
 
 export { exported as texts };

@@ -12,19 +12,14 @@ const LogInPage = ({ navigation }) => {
 
   return (
     <>
-      <ScrollView style={ styles.root }>
-        <View style={ styles.form }>
-          <Spacer size={ 25 } />
+      <ScrollView style={styles.root}>
+        <View style={styles.form}>
+          <Spacer size={25} />
+          <InputField iconSrc={assets.userIcon} label={texts.username} value={username} setValue={setUsername} />
+          <Spacer size={25} />
           <InputField
-            iconSrc={ assets.userIcon }
-            label={ texts.username }
-            value={username}
-            setValue={setUsername}
-          />
-          <Spacer size={ 25 } />
-          <InputField
-            iconSrc={ assets.lockIcon }
-            label={ texts.password }
+            iconSrc={assets.lockIcon}
+            label={texts.password}
             type="password"
             value={password}
             setValue={setPassword}
