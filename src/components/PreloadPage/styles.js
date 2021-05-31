@@ -2,7 +2,7 @@ import { StyleSheet, Dimensions } from 'react-native';
 
 export default StyleSheet.create({
   root: {
-    width: Dimensions.width,
+    width: Dimensions.get('window').width,
     flex: 1,
     flexDirection: 'column',
     justifyContent: 'flex-end',
