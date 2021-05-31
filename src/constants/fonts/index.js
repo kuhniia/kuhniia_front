@@ -15,7 +15,4 @@ const fontsSizes = {
   H11: 'H11',
 };
 
-export {
-  fonts,
-  fontsSizes,
-};
+export { fonts, fontsSizes };

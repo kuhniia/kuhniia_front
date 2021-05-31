@@ -10,6 +10,8 @@ const en = {
   logIn: 'Log In',
   welcome: 'Welcome',
   yourCookingSpaces: 'Your cooking spaces',
+  changePassword: 'Change password',
+  logOut: 'Log Out',
 };
 
 export default en;

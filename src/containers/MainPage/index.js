@@ -7,16 +7,18 @@ import { fonts, fontsSizes } from 'src/constants/fonts';
 
 const MainPage = () => {
   return (
-    <ScrollView style={ styles.root }>
-      <Typography font={fonts.robotoRegular} size={fontsSizes.H24}>{texts.yourCookingSpaces}</Typography>
+    <ScrollView style={styles.root}>
+      <Typography font={fonts.robotoRegular} size={fontsSizes.H24}>
+        {texts.yourCookingSpaces}
+      </Typography>
       <Spacer size={20} />
       <KitchenComponent spaceName={'Family Space'} />
       <Spacer size={15} />
-      <KitchenComponent spaceName={'Family Space'}  />
+      <KitchenComponent spaceName={'Family Space'} />
       <Spacer size={15} />
-      <KitchenComponent spaceName={'Family Space'}  />
+      <KitchenComponent spaceName={'Family Space'} />
       <Spacer size={15} />
-      <KitchenComponent spaceName={'Family Space'}  />
+      <KitchenComponent spaceName={'Family Space'} />
     </ScrollView>
   );
 };

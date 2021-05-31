@@ -35,6 +35,6 @@ export default StyleSheet.create({
     fontSize: 10,
   },
   letterSpacing: {
-    letterSpacing: 0.8
-  }
+    letterSpacing: 0.8,
+  },
 });
