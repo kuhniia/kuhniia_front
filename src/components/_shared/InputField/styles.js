@@ -11,10 +11,16 @@ export default StyleSheet.create({
     height: INPUT_HEIGHT,
     justifyContent: 'center',
     alignItems: 'flex-start',
-    borderBottomColor: colors.limedAsh,
     borderBottomWidth: BOTTOM_WEIGHT,
-    marginBottom: 30,
-    paddingBottom: 10,
+    borderBottomColor: colors.limedAsh,
+    marginTop: 30,
+    paddingBottom: 11,
+  },
+  active: {
+    borderBottomColor: colors.limedAsh,
+  },
+  error: {
+    borderBottomColor: colors.error,
   },
   inputHeader: {
     flexDirection: 'row',
@@ -26,6 +32,7 @@ export default StyleSheet.create({
   input: {
     width: INPUT_WIDTH - 50,
     paddingLeft: 5,
+    paddingVertical: 10,
   },
   inputBody: {
     flexDirection: 'row',
@@ -40,5 +47,10 @@ export default StyleSheet.create({
   },
   eyeIcon: {
     width: 22,
+  },
+  bottomError: {
+    width: INPUT_WIDTH,
+    alignItems: 'flex-start',
+    marginTop: 6,
   },
 });

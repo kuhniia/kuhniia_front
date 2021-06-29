@@ -1,9 +1,11 @@
 import React from 'react';
 import UI from 'src/components/AccountSettingsPage';
-import PAGES from 'src/navigation/constants';
+import { logOut } from 'src/redux/navigationController/actions';
+import { useDispatch } from 'react-redux';
 
-const AccountSettingsPage = ({ navigation }) => {
-  const selectPreloadPage = () => navigation.navigate(PAGES.PreloadPage);
+const AccountSettingsPage = () => {
+  const dispatch = useDispatch();
+  const selectPreloadPage = () => dispatch(logOut());
 
   return <UI selectPreloadPage={selectPreloadPage} />;
 };
