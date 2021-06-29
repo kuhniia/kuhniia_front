@@ -17,4 +17,7 @@ export default StyleSheet.create({
   filled: {
     backgroundColor: colors.limedAsh,
   },
+  spinner: {
+    marginTop: 15,
+  },
 });

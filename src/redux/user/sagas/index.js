@@ -1,5 +1,5 @@
 import { takeLatest } from 'redux-saga/effects';
-import { TYPES } from '../constants';
+import { TYPES } from 'src/redux/user/constants';
 import signUpSaga from './signUpSaga';
 
 export default function* userSaga() {

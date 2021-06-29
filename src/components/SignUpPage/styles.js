@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { BUTTON_BOTTOM_GAP } from 'src/constants/styleConstants';
 
 export default StyleSheet.create({
   root: {
@@ -10,7 +11,8 @@ export default StyleSheet.create({
     alignItems: 'center',
   },
   button: {
+    position: 'absolute',
     alignSelf: 'center',
-    bottom: 40,
+    bottom: BUTTON_BOTTOM_GAP,
   },
 });
