@@ -7,16 +7,27 @@ import assets from 'src/assets';
 
 import styles from './styles';
 
-const UI = ({ selectMainPage = () => {} }) => {
+const UI = ({ onLogInPress = () => {} }) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+
+  const userInputData = {
+    username,
+    password,
+  };
 
   return (
     <>
       <ScrollView style={styles.root}>
         <View style={styles.form}>
           <Spacer size={25} />
-          <InputField iconSrc={assets.userIcon} label={texts.username} value={username} setValue={setUsername} />
+          <InputField
+            iconSrc={assets.messageIcon}
+            label={texts.email}
+            value={username}
+            setValue={setUsername}
+            type="email"
+          />
           <Spacer size={25} />
           <InputField
             iconSrc={assets.lockIcon}
@@ -27,7 +38,7 @@ const UI = ({ selectMainPage = () => {} }) => {
           />
         </View>
       </ScrollView>
-      <ButtonFilled filled label={texts.logIn} style={styles.button} onPress={selectMainPage} />
+      <ButtonFilled filled label={texts.logIn} style={styles.button} onPress={() => onLogInPress(userInputData)} />
     </>
   );
 };

@@ -1,6 +1,7 @@
 import { TYPES } from 'src/redux/user/constants';
 
 const initialState = {
+  validToken: null,
   currentUser: null,
   isLoading: false,
   error: null,
@@ -22,6 +23,26 @@ export const userReducer = (state = initialState, { type, payload } = {}) => {
       };
     }
     case TYPES.SIGN_UP_FAILED: {
+      return {
+        ...state,
+        isLoading: false,
+        error: payload.error,
+      };
+    }
+    case TYPES.LOG_IN_INIT: {
+      return {
+        ...state,
+        isLoading: true,
+      };
+    }
+    case TYPES.LOG_IN_SUCCEED: {
+      return {
+        ...state,
+        isLoading: false,
+        validToken: payload,
+      };
+    }
+    case TYPES.LOG_IN_FAILED: {
       return {
         ...state,
         isLoading: false,
