@@ -4,4 +4,4 @@ const userSelector = (state) => state.userReducer;
 
 export const selectIsUserLoading = createSelector(userSelector, ({ isLoading }) => isLoading);
 
-export const selectIsUserCreationError = createSelector(userSelector, ({ error }) => error);
+export const selectIsUserError = createSelector(userSelector, ({ error }) => error);

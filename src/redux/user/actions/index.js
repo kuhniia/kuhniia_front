@@ -15,6 +15,21 @@ export const signUpFailed = (payload) => ({
   payload,
 });
 
+export const logInInit = (payload) => ({
+  type: TYPES.LOG_IN_INIT,
+  payload,
+});
+
+export const logInSucceed = (payload) => ({
+  type: TYPES.LOG_IN_SUCCEED,
+  payload,
+});
+
+export const logInFailed = (payload) => ({
+  type: TYPES.LOG_IN_FAILED,
+  payload,
+});
+
 export const cleanUpUserData = () => ({
   type: TYPES.CLEAN_UP_USER_DATA,
 });
